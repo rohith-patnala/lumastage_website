@@ -1,0 +1,119 @@
+/* Requested brand-blue hero buttons and consistent blue headings */
+:root { --accent-blue: #08243B; --accent-blue-hover: #061A2B; }
+/* All section headings share one size and the requested blue color. */
+h2, .section-heading h2, .page-hero h2, .hero h2,
+section h2, .cta-section h2, .cta h2, .premium-hero h2 {
+  font-size: clamp(30px, 3.1vw, 42px) !important;
+  line-height: 1.12;
+  letter-spacing: -.035em;
+  color: var(--accent-blue) !important;
+}
+/* Hero heading base is blue; highlighted words remain gold on every page. */
+.hero h1, .page-hero h1, .premium-hero h1 {
+  color: var(--accent-blue) !important;
+}
+.hero h1 span, .page-hero h1 span, .premium-hero h1 span {
+  color: var(--secondary) !important;
+}
+/* Standard hero secondary action: transparent, blue outline and blue text. */
+.hero .hero-actions .btn-outline,
+.page-hero .hero-actions .btn-outline {
+  background: transparent !important;
+  border: 1px solid var(--accent-blue) !important;
+  color: var(--accent-blue) !important;
+}
+.hero .hero-actions .btn-outline:hover,
+.hero .hero-actions .btn-outline:focus-visible,
+.page-hero .hero-actions .btn-outline:hover,
+.page-hero .hero-actions .btn-outline:focus-visible {
+  background: var(--accent-blue) !important;
+  border-color: var(--accent-blue) !important;
+  color: var(--secondary) !important;
+}
+/* Home 2 keeps the requested white outline until hover. */
+.premium-hero .hero-actions .premium-outline {
+  background: transparent !important;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+}
+.premium-hero .hero-actions .premium-outline:hover,
+.premium-hero .hero-actions .premium-outline:focus-visible {
+  background: var(--accent-blue) !important;
+  border-color: var(--accent-blue) !important;
+  color: var(--secondary) !important;
+}
+/* Make the hero area taller across desktop and tablet layouts. */
+.hero, .page-hero, .premium-hero {
+  min-height: max(700px, calc(100svh - 54px));
+}
+.hero, .page-hero { padding-block: 58px 64px; }
+.premium-hero { min-height: max(740px, calc(100svh - 54px)); }
+/* RTL/LTR toggle label is gold on hover/focus in both themes. */
+.site-header .header-actions [data-rtl-toggle]:hover .rtl-label,
+.site-header .header-actions [data-rtl-toggle]:focus-visible .rtl-label {
+  color: var(--secondary) !important;
+}
+body.dark-mode h2, body.dark-mode .section-heading h2,
+body.dark-mode .page-hero h2, body.dark-mode .hero h2,
+body.dark-mode section h2, body.dark-mode .cta-section h2,
+body.dark-mode .cta h2 { color: var(--accent-blue) !important; }
+@media (max-width: 1024px) {
+  .hero, .page-hero, .premium-hero { min-height: max(640px, calc(100svh - 50px)); }
+}
+@media (max-width: 768px) {
+  .hero, .page-hero, .premium-hero { min-height: auto; }
+  .hero, .page-hero { padding-block: 44px; }
+  .premium-hero { padding-block: 70px; }
+}
+
+/* Brand-matched deep navy and page-specific hero heading contrast */
+.hero h1, .page-hero h1 { color: var(--accent-blue) !important; }
+.page-services .page-hero h1 span { color: var(--secondary) !important; }
+.premium-hero h1 { color: #fff !important; }
+.premium-hero h1 span { color: var(--secondary) !important; }
+/* Keep H2 headings in the same deeper brand blue in both themes. */
+h2, .section-heading h2, .page-hero h2, .hero h2, section h2, .cta-section h2, .cta h2, .premium-hero h2 { color: var(--accent-blue) !important; }
+
+/* Targeted update: ensure CTA copy is legible on the dark CTA panels on requested pages */
+.page-home:not(.page-home-two) .cta-panel h2,
+.page-home:not(.page-home-two) .cta-panel p,
+.page-home:not(.page-home-two) .cta-panel .eyebrow,
+.page-home-two .cta-panel h2,
+.page-home-two .cta-panel p,
+.page-home-two .cta-panel .eyebrow,
+.page-services .cta-panel h2,
+.page-services .cta-panel p,
+.page-services .cta-panel .eyebrow,
+.page-contact .cta-panel h2,
+.page-contact .cta-panel p,
+.page-contact .cta-panel .eyebrow{
+  color:#fff!important;
+}
+
+
+/* Mobile header repair: show the menu reliably at 360px and 768px. */
+.mobile-booking-link { display: none !important; }
+.site-header .menu-toggle { display: none; }
+@media (max-width: 900px) {
+  .site-header .header-inner { position: relative; }
+  .site-header .header-actions { display: flex !important; align-items: center !important; gap: 6px !important; }
+  .site-header .header-actions .header-cta { display: none !important; }
+  .site-header .header-actions .menu-toggle,
+  .site-header .menu-toggle { display: inline-grid !important; place-items: center !important; flex: 0 0 40px; width: 40px; height: 40px; min-width: 40px; padding: 0; cursor: pointer; position: relative; z-index: 20; }
+  .site-header .header-inner > .main-nav { display: none !important; order: 3 !important; flex: 0 0 100% !important; width: 100% !important; max-width: 100% !important; flex-direction: column !important; align-items: stretch !important; gap: 0 !important; padding: 8px 0 18px !important; margin: 0 !important; position: static !important; visibility: visible !important; opacity: 1 !important; }
+  .site-header .header-inner > .main-nav.open { display: flex !important; }
+  .site-header .main-nav .nav-link, .site-header .main-nav .nav-trigger { display: flex !important; align-items: center; width: 100% !important; min-height: 44px; padding: 12px 8px !important; text-align: inherit !important; }
+  .site-header .main-nav .nav-dropdown { width: 100%; }
+  .site-header .main-nav .dropdown-menu { display: none !important; position: static !important; width: 100%; opacity: 1 !important; visibility: visible !important; transform: none !important; }
+  .site-header .main-nav .nav-dropdown.expanded .dropdown-menu { display: block !important; }
+  .site-header .main-nav .mobile-booking-link { display: flex !important; }
+}
+@media (max-width: 360px) {
+  .site-header .header-inner { gap: 8px !important; }
+  .site-header .brand-symbol { width: 36px !important; height: 36px !important; }
+  .site-header .brand-name { font-size: 15px !important; }
+  .site-header .brand-subtitle { font-size: 7px !important; }
+  .site-header .header-actions { gap: 4px !important; }
+  .site-header .header-actions .header-control { width: 34px !important; min-width: 34px !important; height: 36px !important; min-height: 36px !important; }
+  .site-header .menu-toggle { width: 36px !important; min-width: 36px !important; height: 36px !important; }
+}

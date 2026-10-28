@@ -1,0 +1,43 @@
+/* Case studies page refinements */
+.band .check-list{margin-bottom:22px}
+
+/* Page-specific styles moved out of global.css */
+.page-cases main > .section > .container > .section-heading{max-width:760px;text-align:center;margin:0 auto 38px}
+.page-cases main > .section > .container > .section-heading .lead{margin-inline:auto}
+.page-cases main > .section:nth-of-type(2) .grid-3{display:flex;flex-direction:column;gap:0}
+.page-cases main > .section:nth-of-type(2) .grid-3 .card{display:grid;grid-template-columns:minmax(220px,.85fr) 1.15fr;border-radius:18px;margin-bottom:18px}
+.page-cases main > .section:nth-of-type(2) .grid-3 .card-image{height:100%;min-height:230px}
+.page-cases main > .section:nth-of-type(2) .grid-3 .card-body{align-self:center;padding:30px}
+@media (max-width:768px){
+.page-cases main > .section:nth-of-type(2) .grid-3 .card{grid-template-columns:1fr}
+.page-cases main > .section:nth-of-type(2) .grid-3 .card-image{height:220px}
+}
+.page-cases main > .section:nth-of-type(3){background:var(--surface-soft)}
+.page-cases main > .section:nth-of-type(3) .grid-3{grid-template-columns:1fr 1fr;gap:0 34px}
+.page-cases main > .section:nth-of-type(3) .card{background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;box-shadow:none;padding:18px 0}
+.page-cases main > .section:nth-of-type(3) .card-image{display:none}
+.page-cases main > .section:nth-of-type(3) .card-body{padding:8px 0}
+@media (max-width:768px){
+.page-cases main > .section:nth-of-type(3) .grid-3{grid-template-columns:1fr}
+}
+.page-cases main>.page-hero{background:linear-gradient(135deg,#173F4A,#1F555E);color:#fff}
+.page-cases main>.page-hero h1,
+.page-cases main>.page-hero .lead{color:#fff}
+.page-cases main>.section:nth-of-type(2) .grid-3 .card{border-radius:20px 20px 5px 5px}
+.page-cases main>.section:nth-of-type(3){background:var(--surface-soft)}
+body:not(.dark-mode).page-cases main>.section:nth-of-type(3){background:var(--surface-soft)}
+.page-cases .cta-panel{background:var(--surface);color:var(--text);border:1px dashed var(--secondary);border-radius:16px}
+.page-cases .cta-panel p{color:var(--muted)}
+body:not(.dark-mode).page-cases main>.page-hero .lead{color:#24363b!important}
+.page-cases .common-method-section .process{gap:16px}
+.page-cases .common-method-section .process-item{height:100%;border:1px solid var(--line);border-radius:16px;background:var(--surface);transition:border-color .25s ease,box-shadow .25s ease}
+.page-cases .common-method-section .process-item:hover{border-color:var(--secondary)!important;box-shadow:0 12px 28px rgba(212,175,55,.13)}
+.page-cases .common-method-section .process-item{border:1px solid var(--line)!important;border-radius:16px!important;transition:border-color .22s ease,box-shadow .22s ease!important}
+.page-cases .common-method-section .process-item:hover{border-color:var(--secondary)!important;box-shadow:0 10px 28px rgba(212,175,55,.14)!important}
+
+/* Match the homepage hero image height at each responsive breakpoint. */
+.page-case-studies .page-hero-image{height:440px!important;min-height:0}
+.page-case-studies .page-hero-image img{width:100%;height:100%;object-fit:cover}
+@media (max-width:1024px){.page-case-studies .page-hero-image{height:390px!important}}
+@media (max-width:768px){.page-case-studies .page-hero-image{height:360px!important}}
+@media (max-width:360px){.page-case-studies .page-hero-image{height:285px!important}}

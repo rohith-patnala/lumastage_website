@@ -1,0 +1,6 @@
+/* Privacy policy page refinements */
+/* Privacy Policy page-specific layout */
+.page-policy main > .page-hero { padding-block: 64px 58px; }
+.page-policy main > .section .container { max-width: 900px; }
+.page-policy main > .section h2 { margin-top: 28px; }
+@media (max-width: 768px) { .page-policy main > .page-hero { padding-block: 44px; } }

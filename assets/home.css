@@ -1,0 +1,273 @@
+/* Home 1 page-specific styling */
+
+
+.hero{background:radial-gradient(ellipse at 80% 20%,rgba(212,175,55,.11),transparent 40%)}
+
+
+.hero h1{max-width:640px}
+
+
+@media (max-width:768px){
+.hero{padding-top:38px}
+}
+
+
+
+/* Page-specific styles moved out of global.css */
+
+
+body:not(.dark-mode) .page-home .band{background:#f0efeb!important;color:#24252a!important}
+
+
+body:not(.dark-mode) .page-home .band p,
+body:not(.dark-mode) .page-home .band .muted{color:#56575b!important}
+
+
+body:not(.dark-mode) .page-home .band .section-heading h2{color:#222328!important}
+
+
+body:not(.dark-mode) .page-home .band .check-list li{color:#24252a}
+
+
+
+
+.page-home main > .section:not(.band) > .container > .section-heading{max-width:760px;text-align:center;margin:0 auto 38px}
+
+
+.page-home main > .section:not(.band) > .container > .section-heading .lead{margin-inline:auto}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+@media (max-width:768px){
+
+
+
+
+
+
+}
+
+
+.page-home .room-first-section .section-heading h2,
+.page-home .room-first-section .section-heading .lead,
+.page-home .room-first-section .check-list,
+.page-home .room-first-section .check-list li{color:#fff!important}
+
+
+.page-home .room-first-section .check-list svg{color:var(--secondary)!important}
+
+
+.page-home .journey-section .process-item{border:1px solid var(--line);border-radius:16px;background:var(--surface);transition:border-color .25s ease,box-shadow .25s ease,background .25s ease}
+
+
+.page-home .journey-section .process-item:hover{border-color:var(--secondary)!important;box-shadow:0 14px 32px rgba(212,175,55,.15);background:var(--surface-soft)}
+
+
+.page-home .client-experiences-section .avatar{overflow:hidden;flex:0 0 48px;width:48px;height:48px;padding:0;border-radius:50%;background:var(--surface-soft)}
+
+
+.page-home .client-experiences-section .avatar img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+
+
+
+
+
+}
+
+
+.page-home .room-first-section .section-heading h2,
+.page-home .room-first-section .section-heading p,
+.page-home .room-first-section .check-list,
+.page-home .room-first-section .check-list li{color:#fff!important}
+
+
+.page-home .room-first-section .check-list i{color:var(--secondary)!important}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page-home .journey-section .process-item{border:1px solid var(--line)!important;border-radius:16px!important;transition:border-color .22s ease,box-shadow .22s ease!important}
+
+
+.page-home .journey-section .process-item:hover{border-color:var(--secondary)!important;box-shadow:0 10px 28px rgba(212,175,55,.14)!important}
+
+
+@media (max-width:768px){
+
+
+
+
+
+
+}
+
+

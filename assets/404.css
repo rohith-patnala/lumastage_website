@@ -1,0 +1,4 @@
+/* 404 page-specific refinements */
+.page-404 main > .hero .hero-copy { max-width: 680px; }
+.page-404 main > .hero .hero-media > img { min-height: 360px; }
+@media (max-width: 768px) { .page-404 main > .hero .hero-media > img { min-height: 260px; } }

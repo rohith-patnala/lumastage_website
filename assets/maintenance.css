@@ -1,0 +1,4 @@
+/* Maintenance page-specific refinements */
+.page-maintenance main > .hero .hero-copy { max-width: 680px; }
+.page-maintenance main > .hero .hero-media > img { min-height: 360px; }
+@media (max-width: 768px) { .page-maintenance main > .hero .hero-media > img { min-height: 260px; } }

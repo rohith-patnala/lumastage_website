@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173F4A">
+    <title>Contact | LumaStage</title>
+    <meta name="description"
+        content="Premium home theatre and audio installation, designed around your room and the way you listen.">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="assets/global.css">
+    <link rel="stylesheet" href="assets/contact.css">
+    <link rel="stylesheet" href="assets/requested-fixes.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script defer src="assets/site.js"></script>
+</head>
+
+<body class="page-contact">
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="LumaStage home">
+                <img class="brand-symbol" src="assets/theatre-logo-light.png" alt="LumaStage home theatre emblem">
+                <span class="brand-copy"><span class="brand-name">Luma<span>Stage</span></span><span
+                        class="brand-subtitle">Immersive Living, Refined</span></span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <div class="nav-dropdown"><button class="nav-trigger" type="button" aria-expanded="false">Home <i
+                            data-lucide="chevron-down" class="dropdown-chevron" aria-hidden="true"></i></button>
+                    <div class="dropdown-menu"><a href="index.html">Home 1 · Classic</a><a href="home-2.html">Home 2 ·
+                            Signature</a></div>
+                </div>
+                <a class="nav-link" href="about.html">About</a><a class="nav-link" href="services.html">Services</a><a
+                    class="nav-link" href="gallery.html">Gallery</a><a class="nav-link" href="case-studies.html">Case
+                    Studies</a><a class="nav-link" href="contact.html">Contact</a>
+
+                <a class="nav-link mobile-booking-link" href="booking.html"><i data-lucide="calendar-check"
+                        aria-hidden="true"></i> Book a Visit</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-primary header-control" data-mode-toggle aria-label="Toggle dark mode"
+                    title="Dark mode"><i data-lucide="moon"></i></button>
+                <button class="btn btn-primary header-control" data-rtl-toggle aria-label="Toggle right-to-left layout"
+                    title="Toggle RTL"><span class="rtl-label">RTL</span></button>
+                <a class="btn btn-primary header-cta" href="booking.html"><i data-lucide="calendar-check"></i> Book a
+                    Visit</a>
+                <button class="icon-button menu-toggle" aria-label="Open menu" aria-expanded="false"><i
+                        data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container page-hero-grid">
+                <div>
+                    <span class="eyebrow">Start a
+                        conversation</span>
+                    <h1>Tell us what you<br>want to <span style="color:var(--secondary)">experience.</span></h1>
+                    <p class="lead">A consultation helps us understand your room, your goals and the right next step —
+                        whether you are starting from scratch or improving an existing system.</p>
+                    <div class="hero-actions"><a class="btn btn-primary" href="#consultation">Book a consultation <i
+                                data-lucide="arrow-down"></i></a><a class="btn btn-outline" href="services.html">Explore
+                            services</a></div>
+                </div>
+                <div class="page-hero-image"><img
+                        src="https://i.pinimg.com/736x/e2/97/29/e297297e9c4041ae5351f0769a95f7ff.jpg"
+                        alt="Home interior and project consultation" loading="lazy"></div>
+            </div>
+        </section>
+        <section class="section" id="consultation">
+            <div class="container grid-2">
+                <div><span class="eyebrow">Consultation booking</span>
+                    <h2>Let’s start with your space.</h2>
+                    <p class="lead">Share a few details and our team can follow up to understand the project and arrange
+                        a suitable time.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="card-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <h3>Call the team</h3>
+                                <p class="muted">+91 12345 67890</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="card-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <h3>Email the studio</h3>
+                                <p class="muted">hello@lumastage.example</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="card-icon"><i data-lucide="clock-3"></i></div>
+                            <div>
+                                <h3>Consultation hours</h3>
+                                <p class="muted">Monday–Saturday · 10:00 AM–6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="form-card" data-demo-form>
+                    <div class="form-grid">
+                        <div class="field"><label for="name">Your name *</label><input id="name" name="name" required
+                                placeholder="Full name"></div>
+                        <div class="field"><label for="email">Email address *</label><input id="email" name="email"
+                                type="email" required placeholder="you@example.com"></div>
+                        <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone"
+                                type="tel" placeholder="+91"></div>
+                        <div class="field"><label for="project">Project type *</label><select id="project"
+                                name="project" required>
+                                <option value="">Choose a project</option>
+                                <option>Dedicated home cinema</option>
+                                <option>Surround sound installation</option>
+                                <option>Multi-room audio</option>
+                                <option>System upgrade</option>
+                                <option>Not sure yet</option>
+                            </select></div>
+                        <div class="field"><label for="timeline">Preferred timeline</label><select id="timeline"
+                                name="timeline">
+                                <option>Exploring options</option>
+                                <option>Within 1 month</option>
+                                <option>1–3 months</option>
+                                <option>3+ months</option>
+                            </select></div>
+                        <div class="field"><label for="budget">Approximate budget</label><select id="budget"
+                                name="budget">
+                                <option>Prefer to discuss</option>
+                                <option>Under ₹2 lakh</option>
+                                <option>₹2–5 lakh</option>
+                                <option>₹5–10 lakh</option>
+                                <option>₹10 lakh+</option>
+                            </select></div>
+                        <div class="field full"><label for="message">Tell us about your room *</label><textarea
+                                id="message" name="message" required
+                                placeholder="Room size, new build or existing space, what you want to improve..."></textarea>
+                        </div>
+                        <div class="field full"><button class="btn btn-primary" type="submit">Request consultation <i
+                                    data-lucide="arrow-up-right"></i></button>
+                            <p class="form-note">This demo form displays a confirmation locally. Connect it to your
+                                preferred form service to receive enquiries.</p>
+                            <p class="form-status muted" role="status" aria-live="polite"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="section band">
+            <div class="container band-grid">
+                <div>
+                    <div class="section-heading "><span class="eyebrow">What happens next</span>
+                        <h2>A useful first conversation, without pressure.</h2>
+                        <p class="lead">We’ll review your brief and discuss the practical questions that shape a good
+                            system.</p>
+                    </div>
+                    <ul class="check-list">
+                        <li><i data-lucide="check-circle-2"></i> Your room, layout and intended use</li>
+                        <li><i data-lucide="check-circle-2"></i> Your priorities for sound, picture and control</li>
+                        <li><i data-lucide="check-circle-2"></i> Next steps, timing and scope</li>
+                    </ul>
+                </div>
+                <div class="band-image"><img
+                        src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1400&q=85"
+                        alt="Comfortable luxury interior with refined detailing" loading="lazy"></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="section-heading center"><span class="eyebrow">Before the consultation</span>
+                    <h2>A little preparation can help.</h2>
+                    <p class="lead">You do not need technical drawings or a finished equipment list.</p>
+                </div>
+                <div class="grid-3">
+                    <article class="card">
+                        <div class="card-body">
+                            <div class="card-icon"><i data-lucide="ruler"></i></div>
+                            <h3>Room dimensions</h3>
+                            <p>Approximate room size, ceiling height and seating arrangement are useful starting points.ceiling height and seating are useful starting points.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-body">
+                            <div class="card-icon"><i data-lucide="image"></i></div>
+                            <h3>Photos or plans</h3>
+                            <p>Images of the room or a simple floor plan can help us understand the space. Images of the room or a simple floor plan can help us understand the space.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-body">
+                            <div class="card-icon"><i data-lucide="list-check"></i></div>
+                            <h3>Your priorities</h3>
+                            <p>Tell us whether films, music, gaming, sport or a blend matters most. Tell us whether films, music, gaming, sport or a blend matters most.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="section">
+            <div class="container grid-2">
+                <div class="split-image"><img
+                        src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1400&q=85"
+                        alt="AV control components and home automation" loading="lazy"></div>
+                <div>
+                    <div class="section-heading "><span class="eyebrow">Need help choosing a service?</span>
+                        <h2>You can start with the problem, not the product.</h2>
+                        <p class="lead">Tell us what you wish worked better and we can help identify the right route.
+                        </p>
+                    </div><a class="btn btn-outline" href="services.html">Compare our services <i
+                            data-lucide="arrow-up-right"></i></a>
+                </div>
+            </div>
+        </section> -->
+        <section class="section">
+            <div class="container">
+                <div class="section-heading center"><span class="eyebrow">Frequently asked questions</span>
+                    <h2>Clear answers before you book.</h2>
+                    <p class="lead">If your question is more specific, include it in the form.</p>
+                </div>
+                <div class="faq-list">
+                    <details>
+                        <summary>Is the first consultation a commitment to proceed?</summary>
+                        <p>No. It is an opportunity to understand the room, discuss options and establish whether the
+                            project is a good fit.</p>
+                    </details>
+                    <details>
+                        <summary>What if I do not know my budget yet?</summary>
+                        <p>Choose “Prefer to discuss” and we can explain the main cost drivers before you decide on a
+                            scope.</p>
+                    </details>
+                    <details>
+                        <summary>Can you advise on a new-build project?</summary>
+                        <p>Yes. Early planning can help coordinate wiring, equipment locations, screen placement and
+                            acoustic decisions.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="section">
+            <div class="container grid-2">
+                <div><span class="eyebrow">Studio promise</span>
+                    <h2>Advice first. A clear plan next.</h2>
+                    <p class="lead">We believe a good project starts with honest recommendations, a practical scope and
+                        respect for your home.</p>
+                </div>
+                <div class="band-image"><img
+                        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=85"
+                        alt="Warm, modern room designed for home entertainment" loading="lazy"></div>
+            </div>
+        </section> -->
+        <section class="cta ">
+            <div class="container">
+                <div class="cta-panel">
+                    <div><span class="eyebrow">Your next listening room</span>
+                        <h2>Your next great movie night starts here.</h2>
+                        <p>Send us a few details and let’s make a plan that fits your home.</p>
+                    </div><a class="btn btn-primary" href="booking.html">Book your consultation <i
+                            data-lucide="arrow-up-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about"><a class="brand" href="index.html" aria-label="LumaStage home"><img
+                            class="brand-symbol" src="assets/theatre-logo-light.png"
+                            alt="LumaStage home theatre emblem"><span class="brand-copy"><span
+                                class="brand-name">Luma<span>Stage</span></span><span class="brand-subtitle">Immersive
+                                Living, Refined</span></span></a>
+                    <p>Thoughtfully engineered home cinema, multi-room audio and acoustic spaces that bring every detail
+                        closer. Tailored luxury by Custom lighting, plush seating, and wall-shaking bass. Bespoke private cinemas built for your lifestyle.</p>
+                    <div class="socials"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a
+                            href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#"
+                            aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a href="#"
+                            aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></div>
+                </div>
+                <div>
+                    <h3 class="footer-title">Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="booking.html">Consultation</a></li>
+                        <li><a href="contact.html#faq">FAQ’s</a></li>
+                        <li><a href="404.html">404</a></li>
+                        <li><a href="maintenance.html">Maintenance</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Get in touch</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+911234567890"><i data-lucide="phone" size="14"></i> +91 12345 67890</a></li>
+                        <li><a href="mailto:hello@lumastage.example"><i data-lucide="mail" size="14"></i>
+                                hello@lumastage.example</a></li>
+                        <li><a href="booking.html"><i data-lucide="calendar-days" size="14"></i> Book a consultation</a>
+                        </li>
+                        <li><a href="contact.html"><i data-lucide="map-pin" size="14"></i> Service areas &amp;
+                                visits</a></li>
+                        <li><a href="contact.html"><i data-lucide="clock-3" size="14"></i> Mon–Sat · 9 AM–6 PM</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© <span data-year></span> LumaStage. Crafted for exceptional
+                    listening.</span><span><a href="privacy-policy.html">Privacy Policy</a> · <a
+                        href="terms-and-conditions.html">Terms &amp; Conditions</a></span></div>
+        </div>
+    </footer>
+</body>
+
+</html>
